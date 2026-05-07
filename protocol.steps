@@ -1,0 +1,33 @@
+{
+  "schema": "riverbraid.gold.protocol.steps",
+  "version": "1.0.0",
+  "repo": "Riverbraid-Pulse-Gold",
+  "ring": 1,
+  "petal": "Pulse-Gold",
+  "invariant": "PULSE_STATIONARY",
+  "claim_boundary": "declared-conditions-only",
+  "canonical_input": {
+    "repo": "Riverbraid-Pulse-Gold",
+    "petal": "Pulse-Gold",
+    "ring": 1,
+    "invariant": "PULSE_STATIONARY"
+  },
+  "expected_result": true,
+  "steps": [
+    "receive canonical stationarity object",
+    "require repo to equal Riverbraid-Pulse-Gold",
+    "require petal to equal Pulse-Gold",
+    "require ring to equal 1",
+    "require invariant to equal PULSE_STATIONARY",
+    "emit deterministic verification output"
+  ],
+  "forbidden": [
+    "Date",
+    "Math.random",
+    "randomUUID",
+    "timestamps",
+    "absolute paths",
+    "environment dependent values",
+    "external lookups"
+  ]
+}
